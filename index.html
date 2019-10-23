@@ -2,9 +2,31 @@
 <html>
   <head>
     <title>Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
   </head>
   <body>
-    <h1>Calculator</h1>
-    <script src="js/scripts.js"></script>
+    <div class="container">
+      <div class="jumbotron">
+          <h1>Calculator</h1>
+
+      </div>
+      <div class="calculator">
+        <form id="add">
+          <label for="number">First Number</label>
+          <input type="text" id="number1"></input><br>
+          <label for="number">Second Number</label>
+          <input type="text" id="number2"></input><br>
+          <div class="output"></div>
+          <button class="btn btn-primary enter" type="submit" name="button">Enter</button>
+          <button type="reset" class="btn btn-info" name="button">Reset Fields</button>
+        </form>
+
+      </div>
+
+    </div>
+
   </body>
 </html>
